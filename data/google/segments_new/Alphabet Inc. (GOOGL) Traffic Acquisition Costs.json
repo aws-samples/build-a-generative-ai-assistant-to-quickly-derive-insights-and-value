@@ -1,0 +1,70 @@
+{
+    "Company Name": "Alphabet Inc.",
+    "Ticker": "GOOGL",
+    "Label": "Traffic Acquisition Costs",
+    "Metric Description": "",
+    "Currency": "",
+    "Type": "",
+    "Most Recent Data": {
+        "For Fiscal Year Ending 2022-12-31": {
+            "Value": "49 Billion",
+            "Growth": "7.4%"
+        },
+        "For Quarter Ending 2023-03-31": {
+            "Value": "$",
+            "Growth": "N/A"
+        }
+    },
+    "Annual Data": [
+        {
+            "Date": "2014-12-31",
+            "Value": "13.5 Billion",
+            "Growth": "10.1%"
+        },
+        {
+            "Date": "2015-12-31",
+            "Value": "14.3 Billion",
+            "Growth": "6.3%"
+        },
+        {
+            "Date": "2016-12-31",
+            "Value": "16.8 Billion",
+            "Growth": "17.1%"
+        },
+        {
+            "Date": "2017-12-31",
+            "Value": "21.7 Billion",
+            "Growth": "29.1%"
+        },
+        {
+            "Date": "2018-12-31",
+            "Value": "26.7 Billion",
+            "Growth": "23.3%"
+        },
+        {
+            "Date": "2019-12-31",
+            "Value": "30.1 Billion",
+            "Growth": "12.6%"
+        },
+        {
+            "Date": "2020-12-31",
+            "Value": "32.8 Billion",
+            "Growth": "8.9%"
+        },
+        {
+            "Date": "2021-12-31",
+            "Value": "45.6 Billion",
+            "Growth": "39%"
+        },
+        {
+            "Date": "2022-12-31",
+            "Value": "49 Billion",
+            "Growth": "7.4%"
+        },
+        {
+            "Date": "TTM",
+            "Value": "48.7 Billion",
+            "Growth": "-0.5%"
+        }
+    ]
+}

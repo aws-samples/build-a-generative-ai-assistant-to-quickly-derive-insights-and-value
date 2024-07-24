@@ -1,0 +1,73 @@
+{
+    "Company Name": "Amazon.com, Inc.",
+    "Ticker": "AMZN",
+    "Revenue Segments": {
+        "Online Stores Revenue": {
+            "Value": "220.00B",
+            "Percentage": "42.80%"
+        },
+        "Third-Party (3P) Seller Services Revenue": {
+            "Value": "117.72B",
+            "Percentage": "22.90%"
+        },
+        "AWS Revenue": {
+            "Value": "80.10B",
+            "Percentage": "15.58%"
+        },
+        "Advertising Services Revenue": {
+            "Value": "37.74B",
+            "Percentage": "7.34%"
+        },
+        "Subscription Services Revenue": {
+            "Value": "35.22B",
+            "Percentage": "6.85%"
+        },
+        "Physical Stores Revenue": {
+            "Value": "18.96B",
+            "Percentage": "3.69%"
+        },
+        "Other Revenue": {
+            "Value": "4.25B",
+            "Percentage": "0.83%"
+        },
+        "Other": {
+            "Value": "0",
+            "Percentage": "0%"
+        }
+    },
+    "Total Revenue": "513.98B",
+    "Quarterly Revenue Segments Data": {
+        "Online Stores Revenue": {
+            "Value": "51.10B",
+            "Percentage": "40.12%"
+        },
+        "Third-Party (3P) Seller Services Revenue": {
+            "Value": "29.82B",
+            "Percentage": "23.41%"
+        },
+        "AWS Revenue": {
+            "Value": "21.35B",
+            "Percentage": "16.77%"
+        },
+        "Subscription Services Revenue": {
+            "Value": "9.66B",
+            "Percentage": "7.58%"
+        },
+        "Advertising Services Revenue": {
+            "Value": "9.51B",
+            "Percentage": "7.47%"
+        },
+        "Physical Stores Revenue": {
+            "Value": "4.89B",
+            "Percentage": "3.84%"
+        },
+        "Other Revenue": {
+            "Value": "4.89B",
+            "Percentage": "3.84%"
+        },
+        "Other": {
+            "Value": "0",
+            "Percentage": "0%"
+        }
+    }
+}

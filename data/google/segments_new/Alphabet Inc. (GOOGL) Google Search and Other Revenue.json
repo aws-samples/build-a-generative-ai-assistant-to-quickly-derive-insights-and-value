@@ -1,0 +1,55 @@
+{
+    "Company Name": "Alphabet Inc.",
+    "Ticker": "GOOGL",
+    "Label": "Google Search and Other Revenue",
+    "Metric Description": "",
+    "Currency": "USD",
+    "Type": "Segment (rev)",
+    "Most Recent Data": {
+        "For Fiscal Year Ending 2022-12-31": {
+            "Value": "$162.4 Billion",
+            "Growth": "9.1%"
+        },
+        "For Quarter Ending 2023-03-31": {
+            "Value": "$",
+            "Growth": "N/A"
+        }
+    },
+    "Annual Data": [
+        {
+            "Date": "2017-12-31",
+            "Value": "$69.8 Billion",
+            "Growth": "0%"
+        },
+        {
+            "Date": "2018-12-31",
+            "Value": "$85.3 Billion",
+            "Growth": "22.2%"
+        },
+        {
+            "Date": "2019-12-31",
+            "Value": "$98.1 Billion",
+            "Growth": "15%"
+        },
+        {
+            "Date": "2020-12-31",
+            "Value": "$104.1 Billion",
+            "Growth": "6.1%"
+        },
+        {
+            "Date": "2021-12-31",
+            "Value": "$149 Billion",
+            "Growth": "43.1%"
+        },
+        {
+            "Date": "2022-12-31",
+            "Value": "$162.4 Billion",
+            "Growth": "9.1%"
+        },
+        {
+            "Date": "TTM",
+            "Value": "$163.2 Billion",
+            "Growth": "0.5%"
+        }
+    ]
+}

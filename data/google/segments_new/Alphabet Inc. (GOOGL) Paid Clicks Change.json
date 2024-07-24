@@ -1,0 +1,65 @@
+{
+    "Company Name": "Alphabet Inc.",
+    "Ticker": "GOOGL",
+    "Label": "Paid Clicks Change",
+    "Metric Description": "",
+    "Currency": "",
+    "Type": "Key Performance Indicator",
+    "Most Recent Data": {
+        "For Fiscal Year Ending 2022-12-31": {
+            "Value": "10%",
+            "Growth": "-56.5%"
+        },
+        "For Quarter Ending 2023-03-31": {
+            "Value": "$",
+            "Growth": "N/A"
+        }
+    },
+    "Annual Data": [
+        {
+            "Date": "2014-12-31",
+            "Value": "20%",
+            "Growth": "-20%"
+        },
+        {
+            "Date": "2015-12-31",
+            "Value": "22%",
+            "Growth": "10%"
+        },
+        {
+            "Date": "2016-12-31",
+            "Value": "34%",
+            "Growth": "54.5%"
+        },
+        {
+            "Date": "2017-12-31",
+            "Value": "54%",
+            "Growth": "58.8%"
+        },
+        {
+            "Date": "2018-12-31",
+            "Value": "62%",
+            "Growth": "14.8%"
+        },
+        {
+            "Date": "2019-12-31",
+            "Value": "23%",
+            "Growth": "-62.9%"
+        },
+        {
+            "Date": "2020-12-31",
+            "Value": "19%",
+            "Growth": "-17.4%"
+        },
+        {
+            "Date": "2021-12-31",
+            "Value": "23%",
+            "Growth": "21.1%"
+        },
+        {
+            "Date": "2022-12-31",
+            "Value": "10%",
+            "Growth": "-56.5%"
+        }
+    ]
+}

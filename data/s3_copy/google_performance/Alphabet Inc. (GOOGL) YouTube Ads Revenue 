@@ -1,0 +1,49 @@
+{
+    "Company Name": "Alphabet Inc.",
+    "Ticker": "GOOG",
+    "Revenue Segment": "YouTube Ads Revenue",
+    "Currency": "USD",
+    "Type": "Segment (rev)",
+    "Most Recent Data": {
+        "For Fiscal Year Ending 2022-12-31": {
+            "Value": "$29.24 Billion",
+            "Growth": "1.38%"
+        },
+        "For Quarter Ending 2023-03-31": {
+            "Value": "$6.69 Billion",
+            "Growth": "-2.56%"
+        }
+    },
+    "Annual Data": [
+        {
+            "Date": "2022-12-31",
+            "Value": "$29.24 Billion",
+            "Growth": "1.38%"
+        },
+        {
+            "Date": "2021-12-31",
+            "Value": "$28.85 Billion",
+            "Growth": "45.89%"
+        },
+        {
+            "Date": "2020-12-31",
+            "Value": "$19.77 Billion",
+            "Growth": "30.52%"
+        },
+        {
+            "Date": "2019-12-31",
+            "Value": "$15.15 Billion",
+            "Growth": "35.8%"
+        },
+        {
+            "Date": "2018-12-31",
+            "Value": "$11.16 Billion",
+            "Growth": "36.87%"
+        },
+        {
+            "Date": "2017-12-31",
+            "Value": "$8.15 Billion",
+            "Growth": "0%"
+        }
+    ]
+}
