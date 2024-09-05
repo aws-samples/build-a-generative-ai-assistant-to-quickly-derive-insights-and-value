@@ -232,11 +232,12 @@ def _get_embeddings(inputs):
 
 
 def get_bedrock_client():
+    bedrock_region_name = os.environ["BEDROCK_REGION"]
     return boto3.client(
-        "bedrock-runtime"
+        "bedrock-runtime",
+        region_name=bedrock_region_name
     )
-
-
+    
 
 def create_index(
     opensearch,

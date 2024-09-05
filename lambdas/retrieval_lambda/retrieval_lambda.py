@@ -25,6 +25,7 @@ cors_config = CORSConfig(allow_origin="*", max_age=300)
 app = APIGatewayHttpResolver(cors=cors_config)
 
 model_id = os.environ["BEDROCK_EMBEDDING_MODEL_ID"]
+bedrock_region_name = os.environ["BEDROCK_REGION"]
 
 
 # Define a POST route for '/api/retriever'

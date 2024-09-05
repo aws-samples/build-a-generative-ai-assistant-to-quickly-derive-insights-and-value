@@ -64,6 +64,9 @@ export class AppStack extends cdk.Stack {
 
         configDotenv();
 
+        const bedrock_region = process.env.BEDROCK_REGION || this.region;
+        const bedrock_endpoint = `bedrock-runtime.${bedrock_region}.amazonaws.com`
+
         /* eslint-disable @typescript-eslint/no-unused-vars */
         props = { ...defaultProps, ...props };
 
@@ -219,7 +222,7 @@ export class AppStack extends cdk.Stack {
                 new iam.PolicyStatement({
                     effect: iam.Effect.ALLOW,
                     actions: ["bedrock:InvokeModel"],
-                    resources: [`arn:aws:bedrock:${this.region}::foundation-model/${process.env.BEDROCK_TEXT_MODEL_ID!}`],
+                    resources: [`arn:aws:bedrock:${bedrock_region}::foundation-model/${process.env.BEDROCK_TEXT_MODEL_ID!}`],
                 }),
             ],
         });
@@ -229,7 +232,7 @@ export class AppStack extends cdk.Stack {
                 new iam.PolicyStatement({
                     effect: iam.Effect.ALLOW,
                     actions: ["bedrock:InvokeModel"],
-                    resources: [`arn:aws:bedrock:${this.region}::foundation-model/${process.env.BEDROCK_EMBEDDING_MODEL_ID!}`],
+                    resources: [`arn:aws:bedrock:${bedrock_region}::foundation-model/${process.env.BEDROCK_EMBEDDING_MODEL_ID!}`],
                 }),
             ],
         });
@@ -325,7 +328,8 @@ export class AppStack extends cdk.Stack {
                 OPENSEARCH_ENDPOINT: esDomain.domainEndpoint,
                 BEDROCK_TEXT_MODEL_ID: process.env.BEDROCK_TEXT_MODEL_ID!,
                 BEDROCK_EMBEDDING_MODEL_ID: process.env.BEDROCK_EMBEDDING_MODEL_ID!,
-                REGION: this.region
+                REGION: this.region,
+                BEDROCK_REGION: bedrock_region
             },
             timeout: Duration.minutes(5),
             tracing: lambda.Tracing.ACTIVE,
@@ -380,6 +384,7 @@ export class AppStack extends cdk.Stack {
 
         const retrieverLambda = new lambda.Function(this, "retrieverLambda", {
             ...lambdaDefaults,
+            functionName: "gen-ai-assistant-retriever-lambda",
             code: lambda.Code.fromAsset("../lambdas/retrieval_lambda"),
             handler: "retrieval_lambda.lambda_handler",
             role: retrieverLambdaRole,
@@ -408,6 +413,7 @@ export class AppStack extends cdk.Stack {
 
         const responseLambda = new lambda.Function(this, "responseLambda", {
             ...lambdaDefaults,
+            functionName: "gen-ai-assistant-response-lambda",
             code: lambda.Code.fromAsset("../lambdas/response_lambda"),
             handler: "generate_response_lambda.lambda_handler",
             role: responseLambdaRole,
@@ -438,6 +444,7 @@ export class AppStack extends cdk.Stack {
         const indexLambda = new lambda.Function(this, "indexDataLambda", {
             code: lambda.Code.fromAsset("../lambdas/index_data_lambda"),
             handler: "index_data_lambda.lambda_handler",
+            functionName: "gen-ai-assistant-index-data-lambda",
             ...lambdaDefaults,
             role: indexLambdaRole,
         });

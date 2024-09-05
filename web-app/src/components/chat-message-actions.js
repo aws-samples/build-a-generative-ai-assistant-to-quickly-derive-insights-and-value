@@ -22,7 +22,6 @@ import * as React from "react";
 import { useContext } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { MessageInfo } from "../components/chat-message-info";
 import { ProcessingInfo } from "../components/chat-processing";
 
 import { Button } from "../basics/button";

@@ -25,7 +25,7 @@ import { VPCNetworkStack } from "./vpc-network-stack";
 const app = new cdk.App();
 
 const stackName =
-    app.node.tryGetContext("stack_name") || "genai-financial-chatbot";
+    app.node.tryGetContext("stack_name") || "gen-ai-assistant";
 
 const account =
     app.node.tryGetContext("account") ||

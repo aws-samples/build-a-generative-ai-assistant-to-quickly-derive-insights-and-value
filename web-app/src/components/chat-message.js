@@ -24,7 +24,7 @@ import { twMerge } from "tailwind-merge";
 import dynamic from "next/dynamic";
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
-import { IconRIV, IconUser } from "../basics/icons";
+import { IconUser } from "../basics/icons";
 
 import { ChatMessageActions } from "../components/chat-message-actions"; // small button for copy-action on hover
 
@@ -37,7 +37,6 @@ export function ChatMessage({ message, latest, ...props }) {
                     message.role === "user" ? "bg-slate-800" : "bg-slate-800"
                 )}
             >
-                {/* {message.role === "user" ? <IconUser /> : <IconRIV className="h-7 w-7" />} */}
                 {<IconUser />}
             </div>
             <div className="flex-1 px-1 py-1 ml-4 space-y-4 text-slate-300 whitespace-pre-line overflow-hidden">

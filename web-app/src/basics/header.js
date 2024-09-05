@@ -18,21 +18,10 @@
 
 import * as React from "react";
 
-// import { IconRIVFull } from "../basics/icons";
-// import { Amplify, Auth, API } from "aws-amplify";
-// import { useNavigate } from 'react-router-dom';
-
-
-// const CF_ENDPOINT = 'https://d1qy0ig6l7ccff.cloudfront.net'
-// const COGNITO_UI_ENDPOINT = 'https://test-auth-19165458466.auth.us-east-1.amazoncognito.com'
-
 
 export async function Header() {
     return (
         <header className="sticky top-0 flex items-center justify-between w-full h-16 px-4 shrink-0 backdrop-blur-sm z-10">
-            {/* <div className="flex items-center font-md text-2xl">
-                <IconRIVFull />
-            </div> */}
         </header >
     );
 }

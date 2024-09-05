@@ -43,7 +43,7 @@ export function ChatStartScreen() {
         <div className="mx-auto max-w-2xl px-4">
             <div className="text-slate-200 bg-gray-800 p-8 rounded-xl shadow-xl">
                 <h1 className="mb-4 text-lg font-semibold">
-                    Welcome to the AWS re:invent FSI303 Builder Session!
+                    Welcome to the Generative AI Financial Assistant!
                 </h1>
                 <p className="mb-4 leading-normal">
                     We have created this page for you to try out the generative AI chatbot you will

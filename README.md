@@ -40,6 +40,13 @@ To build and deploy this template the following tools are required.
 
 Use the secret access key of a user or export the temporary credentials.
 
+### Environment Variables
+
+If you are deploying to a region that does not have **Amazon Bedrock** access or you would like to access an **Amazon Bedrock** endpoint not in the region you are deploying to please add the following line to the ```deploy/.env``` file.
+```
+BEDROCK_REGION=<insert region name, i.e. "us-east-1">
+```
+
 ### Lambda Layer Creation
 
 The lambda functions in this workshop require some packages that will be imported via lambda layers. Before we deploy the application, a zip must be generated that has all the necessary packages.
@@ -156,6 +163,7 @@ To deploy other environments either copy the commands and rename the stack name 
 export STACK_NAME="prod"
 npm run deploy
 ```
+The default stack name is "genai-financial-assistant".
 
 To deploy into another account or region you can set the context variables by:
 
@@ -168,9 +176,7 @@ npm run deploy -- -c region=eu-west-1
 
 ## Workshop Activities <a name="Workshop"></a>
 
-To perform the workshop follow the instructions at the link:
-
-**https://catalog.us-east-1.prod.workshops.aws/workshops/8b9976db-f4b2-4554-ae82-ce9e552e20ca/en-US**
+To perform the workshop follow the instructions at the [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/8b9976db-f4b2-4554-ae82-ce9e552e20ca/en-US)
 
 
 ## Destroy <a name="Destory"></a>

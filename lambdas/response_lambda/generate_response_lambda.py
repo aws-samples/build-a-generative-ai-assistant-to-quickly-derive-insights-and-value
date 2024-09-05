@@ -130,6 +130,8 @@ def lambda_handler(event: dict, context: LambdaContext) -> dict:
 
 # Function to get a Bedrock client using boto3
 def get_bedrock_client():
+    bedrock_region_name = os.environ["BEDROCK_REGION"]
     return boto3.client(
-        "bedrock-runtime"
+        "bedrock-runtime",
+        region_name=bedrock_region_name
     )

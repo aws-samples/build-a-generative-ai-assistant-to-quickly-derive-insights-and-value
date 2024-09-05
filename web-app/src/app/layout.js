@@ -23,7 +23,7 @@ import { Header } from "../basics/header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Financial Chatbot",
+    title: "Financial Assistant",
     description: "Chatbot landing page for FSI303 re:invent session",
 };
 
